@@ -2,7 +2,7 @@
 
 ###Scripts###
 Place the scripts in ~/.scripts folder
-Append to end of ~/.bashrc
+Append to end of \~/.bashrc
   export PATH=$PATH:~/.scripts/
 
 
