@@ -19,8 +19,8 @@ Name=
 
 Type=Link
 
-URL=/home/dawar/Templates/<filename>
+URL=/home/dawar/Templates/filename
 
 Icon=
 
-Place the <filename> file in ~/Templates
+Place the file in ~/Templates
