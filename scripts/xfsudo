@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#GUI frontend for sudo.
+#Depends on zenity.
+
+pass=$(zenity --title="xfsudo" --password);
+echo $pass | sudo -S env HOME=$HOME $@

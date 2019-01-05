@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rofi -modi "drun" -show drun -theme /home/dawar/.config/rofi/config/OneDark2.rasi

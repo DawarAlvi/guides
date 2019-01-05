@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Android Studio throws an error if '/dev/kvm' file is inaccessable.
+
+sudo chmod 777 /dev/kvm
