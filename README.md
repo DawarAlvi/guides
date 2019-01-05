@@ -1,9 +1,9 @@
 # Config-Files
 
 ###Scripts###
-Place the scripts in ~/.scripts folder
+Place the scripts in \~/.scripts folder
 Append to end of \~/.bashrc
-  export PATH=$PATH:~/.scripts/
+  export PATH=$PATH:\~/.scripts/
 
 
 ###Templates###
