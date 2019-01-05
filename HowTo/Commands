@@ -1,0 +1,22 @@
+#Format USB as fat32:
+#'lsblk' to check the name(eg: /dev/sdb)
+sudo mkfs.vfat -n 'NAME' -I /dev/sdb
+
+#Add support for ExFat format:
+sudo apt install exfat-fuse exfat-utils
+
+#Format USB as exfat:
+sudo mkfs.exfat /dev/sdb
+
+#update youtube-dl:
+sudo pip install --upgrade youtube-dl
+
+#Replace open-jdk with oracle jdk:
+sudo update-alternatives --install "/usr/bin/java" "java" "/opt/java/jdk-9.0.1/bin/java" 1
+sudo update-alternatives --set java /opt/java/jdk-9.0.1/bin/java
+
+To change between UTC and local time:
+timedatectl set-local-rtc 1
+timedatectl set-local-rtc 0
+#To check status:
+timedatectl status
