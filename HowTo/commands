@@ -1,3 +1,6 @@
+#Add rar file support:
+sudo apt install rar unrar
+
 #Format USB as fat32:
 #'lsblk' to check the name(eg: /dev/sdb)
 sudo mkfs.vfat -n 'NAME' -I /dev/sdb
