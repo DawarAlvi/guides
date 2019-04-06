@@ -1,0 +1,15 @@
+#!/bin/bash
+
+i3lock \
+-B=1 \
+-k \
+--timestr='%I:%M' \
+--datestr='%A, %d %B %Y' \
+--timecolor=ffffffff \
+--datecolor=ffffffff \
+--timesize=50 \
+--datesize=20 \
+--time-font=Inconsolata \
+--date-font=Inconsolata \
+--radius=130 \
+--ring-width=5
