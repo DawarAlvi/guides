@@ -4,7 +4,7 @@
 
 Place the scripts in \~/.scripts folder
 
-Append to end of \~/.bashrc
+Append to end of \~/.profile
 
   export PATH=$PATH:\~/.scripts/
 
