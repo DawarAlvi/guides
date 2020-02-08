@@ -1,0 +1,3 @@
+#!/bin/bash
+p="$(rofi -dmenu -password -lines 1 -p 'Password')";
+echo $p | sudo -S $1;
