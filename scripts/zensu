@@ -3,5 +3,5 @@
 #GUI frontend for sudo.
 #Depends on zenity.
 
-pass=$(zenity --title="xfsudo" --password);
+pass=$(zenity --title="zensu" --password);
 echo $pass | sudo -S env HOME=$HOME $@
