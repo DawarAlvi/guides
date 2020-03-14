@@ -1,3 +1,7 @@
 #!/bin/bash
+
+#GUI frontend for sudo
+#Depends on rofi
+
 p="$(rofi -dmenu -password -lines 1 -p 'Password')";
 echo $p | sudo -S $1;
