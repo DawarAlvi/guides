@@ -3,5 +3,5 @@
 #GUI frontend for sudo.
 #Depends on zenity.
 
-pass=$(zenity --title="zensu" --password);
+pass=$(zenity --title="ZenSu" --password);
 echo $pass | sudo -S env HOME=$HOME $@
