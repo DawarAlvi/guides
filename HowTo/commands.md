@@ -116,4 +116,6 @@ Example output:
 * U: Remount all mounted filesystems in read-only mode
 * B: Immediately reboot the system, without unmounting partitions or syncing
 
+**Mnemonic: R**aising **E**lephants **I**s **S**o **U**tterly **B**oring
+
 
