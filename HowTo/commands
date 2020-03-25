@@ -1,4 +1,4 @@
-#packages:
+# packages:
   #Add rar file support:
     apt install rar unrar
   #Add ExFat format support:
@@ -8,13 +8,13 @@
 
 
 
-#List block devices:
+# List block devices:
   lsblk
     #(eg: /dev/sdb)
 
 
 
-#Format USB:
+# Format USB:
   #fat32:
     mkfs.vfat -n 'NAME' -I /dev/sdb
   #exfat:
@@ -22,7 +22,7 @@
 
 
 
-#Replace open-jdk with oracle jdk: 
+# Replace open-jdk with oracle jdk: 
   #list
     update-alternatives --list java
     update-alternatives --list javac
@@ -41,10 +41,20 @@
 
 
 
-#To change between UTC and local time:
+# To change between UTC and local time:
   #to utc:
     timedatectl set-local-rtc 1
   #to local time:
     timedatectl set-local-rtc 0
   #To check status:
     timedatectl status
+
+
+# Templates
+  #For KDE make a .desktop file in $HOME/.local/share/templates with content:
+    [Desktop Entry]
+    Type=Link
+    Name=<NAME>
+    URL=/home/dawar/Templates/<NAME>
+    Icon=<ICON>
+  #Place the file in ~/Templates
