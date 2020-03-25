@@ -8,7 +8,7 @@
 
     apt install exfat-fuse exfat-utils
 
-**update youtube-dl:**
+**Update youtube-dl:**
 
     pip install --upgrade youtube-dl
 
@@ -21,7 +21,16 @@
 
 # List block devices:
     lsblk
-(eg: /dev/sdb)
+
+Example:
+
+NAME     RM   SIZE  RO  TYPE  MOUNTPOINT
+sda       0   800G   0  disk 
+├─sda1    0   300G   0  part  /
+└─sda2    0   500G   0  part  /mnt/data
+sdb       1    32G   0  disk 
+└─sdb1    1    32G   0  part  /media/usrnm/hp
+
 
 
 
