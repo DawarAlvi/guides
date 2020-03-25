@@ -1,4 +1,4 @@
-# packages:
+# Packages:
 
 **Add rar file support:**
 
@@ -12,6 +12,11 @@
 
     pip install --upgrade youtube-dl
 
+# PPA's:
+
+**Rofi**
+
+    sudo add-apt-repository ppa:jasonpleau/rofi
 
 
 # List block devices:
