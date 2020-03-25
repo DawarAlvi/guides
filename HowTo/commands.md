@@ -88,6 +88,11 @@ Example output:
 
     timedatectl status
 
+# Environmental vars:
+
+**Place at the end of your ~/.profile or ~/.bashrc file:**
+
+    export PATH=$PATH:~/.scripts/
 
 # Templates
 **For KDE make a .desktop file in ~/.local/share/templates with content:**
