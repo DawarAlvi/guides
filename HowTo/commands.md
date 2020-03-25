@@ -24,12 +24,12 @@
 
 Example:
 
-NAME     RM   SIZE  RO  TYPE  MOUNTPOINT
-sda       0   800G   0  disk 
-├─sda1    0   300G   0  part  /
-└─sda2    0   500G   0  part  /mnt/data
-sdb       1    32G   0  disk 
-└─sdb1    1    32G   0  part  /media/usrnm/hp
+    NAME     RM   SIZE  RO  TYPE  MOUNTPOINT
+    sda       0   800G   0  disk 
+    ├─sda1    0   300G   0  part  /
+    └─sda2    0   500G   0  part  /mnt/data
+    sdb       1    32G   0  disk 
+    └─sdb1    1    32G   0  part  /media/usrnm/hp
 
 
 
