@@ -2,15 +2,15 @@
 
 **Add rar file support:**
 
-apt install rar unrar
+  apt install rar unrar
 
 **Add ExFat format support:**
 
-apt install exfat-fuse exfat-utils
+  apt install exfat-fuse exfat-utils
 
 **update youtube-dl:**
 
-pip install --upgrade youtube-dl
+  pip install --upgrade youtube-dl
 
 
 
