@@ -1,27 +1,23 @@
 # Config-Files
 
-###Scripts###
+# Scripts
 
-Place the scripts in \~/.scripts folder
+Place the scripts in ~/.scripts folder
 
-Append to end of \~/.profile
+Append to end of ~/.profile
 
-  export PATH=$PATH:\~/.scripts/
+  export PATH=$PATH:~/.scripts/
 
 
 
-###Templates###
+# Templates
 
 For KDE make a .desktop file in $HOME/.local/share/templates with content:
 
 [Desktop Entry]
-
-Name=
-
 Type=Link
-
-URL=/home/dawar/Templates/filename
-
-Icon=
+Name=<NAME>
+URL=/home/dawar/Templates/<NAME>
+Icon=<ICON>
 
 Place the file in ~/Templates
