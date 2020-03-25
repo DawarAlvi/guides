@@ -1,25 +1,50 @@
-#Add rar file support:
-sudo apt install rar unrar
+#packages:
+  #Add rar file support:
+    sudo apt install rar unrar
+  #Add ExFat format support:
+    sudo apt install exfat-fuse exfat-utils
+  #update youtube-dl:
+    sudo pip install --upgrade youtube-dl
 
-#Format USB as fat32:
-#'lsblk' to check the name(eg: /dev/sdb)
-sudo mkfs.vfat -n 'NAME' -I /dev/sdb
 
-#Add support for ExFat format:
-sudo apt install exfat-fuse exfat-utils
 
-#Format USB as exfat:
-sudo mkfs.exfat /dev/sdb
+#List block devices:
+  lsblk
+    #(eg: /dev/sdb)
 
-#update youtube-dl:
-sudo pip install --upgrade youtube-dl
 
-#Replace open-jdk with oracle jdk:
-sudo update-alternatives --install "/usr/bin/java" "java" "/opt/java/jdk-9.0.1/bin/java" 1
-sudo update-alternatives --set java /opt/java/jdk-9.0.1/bin/java
 
-To change between UTC and local time:
-timedatectl set-local-rtc 1
-timedatectl set-local-rtc 0
-#To check status:
-timedatectl status
+#Format USB:
+  #fat32:
+    sudo mkfs.vfat -n 'NAME' -I /dev/sdb
+  #exfat:
+    sudo mkfs.exfat /dev/sdb
+
+
+
+#Replace open-jdk with oracle jdk: 
+  #list
+    update-alternatives --list java
+    update-alternatives --list javac
+  #install
+    sudo update-alternatives --install /usr/bin/java java /opt/jdk-13.0.2/bin/java 100
+    sudo update-alternatives --install /usr/bin/javac javac /opt/jdk-13.0.2/bin/javac 100
+  #set
+    sudo update-alternatives --set java /opt/java/jdk-13.0.2/bin/java
+    sudo update-alternatives --set javac /opt/java/jdk-13.0.2/bin/javac
+  #display
+    update-alternatives --display java
+    update-alternatives --display javac
+  #check
+    java --version
+    javac --version
+
+
+
+#To change between UTC and local time:
+  #to utc:
+    timedatectl set-local-rtc 1
+  #to local time:
+    timedatectl set-local-rtc 0
+  #To check status:
+    timedatectl status
