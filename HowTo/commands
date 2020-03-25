@@ -1,10 +1,10 @@
 #packages:
   #Add rar file support:
-    sudo apt install rar unrar
+    apt install rar unrar
   #Add ExFat format support:
-    sudo apt install exfat-fuse exfat-utils
+    apt install exfat-fuse exfat-utils
   #update youtube-dl:
-    sudo pip install --upgrade youtube-dl
+    pip install --upgrade youtube-dl
 
 
 
@@ -16,9 +16,9 @@
 
 #Format USB:
   #fat32:
-    sudo mkfs.vfat -n 'NAME' -I /dev/sdb
+    mkfs.vfat -n 'NAME' -I /dev/sdb
   #exfat:
-    sudo mkfs.exfat /dev/sdb
+    mkfs.exfat /dev/sdb
 
 
 
@@ -27,11 +27,11 @@
     update-alternatives --list java
     update-alternatives --list javac
   #install
-    sudo update-alternatives --install /usr/bin/java java /opt/jdk-13.0.2/bin/java 100
-    sudo update-alternatives --install /usr/bin/javac javac /opt/jdk-13.0.2/bin/javac 100
+    update-alternatives --install /usr/bin/java java /opt/jdk-13.0.2/bin/java 100
+    update-alternatives --install /usr/bin/javac javac /opt/jdk-13.0.2/bin/javac 100
   #set
-    sudo update-alternatives --set java /opt/java/jdk-13.0.2/bin/java
-    sudo update-alternatives --set javac /opt/java/jdk-13.0.2/bin/javac
+    update-alternatives --set java /opt/java/jdk-13.0.2/bin/java
+    update-alternatives --set javac /opt/java/jdk-13.0.2/bin/javac
   #display
     update-alternatives --display java
     update-alternatives --display javac
