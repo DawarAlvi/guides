@@ -2,7 +2,7 @@
 
   **Add rar file support:**
   
-    `apt install rar unrar`
+    `<apt install rar unrar>`
     
   **Add ExFat format support:**
   
