@@ -76,12 +76,12 @@
 
 
 # Templates
-**For KDE make a .desktop file in $HOME/.local/share/templates with content:**
+**For KDE make a .desktop file in ~/.local/share/templates with content:**
 
     [Desktop Entry]
     Type=Link
     Name=<NAME>
-    URL=/home/dawar/Templates/<NAME>
+    URL=/home/dawar/Templates/<FILENAME>
     Icon=<ICON>
     
 **Place the file in ~/Templates**
