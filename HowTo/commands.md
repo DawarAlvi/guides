@@ -105,6 +105,10 @@ Example output:
     
 **Place the file in ~/Templates**
 
+# Add 32-bit support
+    sudo dpkg --add-architecture i386
+    sudo apt install libc6:i386 libncurses:i386 libstdc++:i386
+
 # REISUB - the gentle Linux restart
 
 **Holding down Alt and SysRq (which is the Print Screen key) while slowly typing REISUB will get you safely restarted. REISUO will do a shutdown rather than a restart.**
