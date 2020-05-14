@@ -107,7 +107,7 @@ Example output:
 
 # Add 32-bit support
     sudo dpkg --add-architecture i386
-    sudo apt install libc6:i386 libncurses:i386 libstdc++:i386
+    sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386
 
 # REISUB - the gentle Linux restart
 
