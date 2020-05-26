@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+#uses i3lock-color
 
 i3lock \
 -B=1 \
