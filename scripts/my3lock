@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#uses i3lock-color
-
 i3lock \
 -B=1 \
 -k \
@@ -11,7 +9,14 @@ i3lock \
 --datecolor=ffffffff \
 --timesize=50 \
 --datesize=20 \
---time-font=Inconsolata \
---date-font=Inconsolata \
---radius=130 \
---ring-width=5
+--time-font=sans-serif \
+--date-font=sans-serif \
+--radius=150 \
+--ring-width=10 \
+--ringcolor=4c566aff \
+--ringvercolor=81a1c1ff \
+--ringwrongcolor=d08770ff \
+--linecolor=000000ff \
+--insidecolor=2e3440ff \
+--insidevercolor=5e81acff \
+--insidewrongcolor=bf616aff
