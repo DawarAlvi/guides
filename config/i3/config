@@ -117,6 +117,17 @@ gaps inner 10
 smart_gaps on
 
 
+# COLORS
+# class                 border    bg        text      indicator child_border
+client.focused          #2e3440   #4c566a   #ffffff   #2e3440   #88c0d0
+client.focused_inactive #333333   #5f676a   #ffffff   #484e50   #2e3440
+client.unfocused        #333333   #222222   #888888   #292d2e   #2e3440
+client.urgent           #2f343a   #900000   #ffffff   #900000   #900000
+client.placeholder      #000000   #0c0c0c   #ffffff   #000000   #0c0c0c
+
+client.background       #ffffff
+
+
 # APPLICATIONS
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+d      exec --no-startup-id rofi-apps
