@@ -18,6 +18,19 @@
 
     sudo add-apt-repository ppa:jasonpleau/rofi
 
+# Touchpad:
+**Enable Tap to click**
+
+    sudo nano /etc/X11/xorg.conf.d/30-touchpad.conf
+
+**Paste**
+Section "InputClass"
+        Identifier "MyTouchpad"
+        MatchIsTouchpad "on"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection
+
 
 # List block devices:
     lsblk
