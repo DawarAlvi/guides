@@ -24,12 +24,13 @@
     sudo nano /etc/X11/xorg.conf.d/30-touchpad.conf
 
 **Paste**
-Section "InputClass"
+
+    Section "InputClass"
         Identifier "MyTouchpad"
         MatchIsTouchpad "on"
         Driver "libinput"
         Option "Tapping" "on"
-EndSection
+    EndSection
 
 
 # List block devices:
