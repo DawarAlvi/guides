@@ -1,3 +1,7 @@
+# Write iso to flashdrive
+
+    sudo dd bs=4M if=path/to/archcraft.iso of=/dev/sdX status=progress oflag=sync
+
 # Packages:
 
 **Add rar file support:**
