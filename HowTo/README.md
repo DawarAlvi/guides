@@ -1,6 +1,6 @@
 # Write iso to flashdrive
 
-    sudo dd bs=4M if=path/to/archcraft.iso of=/dev/sdX status=progress oflag=sync
+    sudo dd bs=4M if=path/to/linux.iso of=/dev/sdX status=progress oflag=sync
 
 # Packages:
 
