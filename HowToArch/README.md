@@ -61,7 +61,7 @@ Use `fdisk` or `cfidsk` to partition the disk.
     mkswap /dev/sdX#
     swapon /dev/sdX#
     
-### Mount the root partition
+#### Mount the root partition
     mount /dev/sda# /mnt
 
 <br/>
