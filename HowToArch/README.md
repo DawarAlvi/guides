@@ -50,8 +50,9 @@
     fdisk -l
 > :warning: **Required partitions:**
 >
-> - root directory / (ext4)
 > - EFI system partition (fat32)
+> - root directory / (ext4)
+
 
 Use `fdisk` or `cfidsk` to partition the disk.
 
@@ -111,11 +112,11 @@ Use `fdisk` or `cfidsk` to partition the disk.
     <hostname> > /etc/hostname
         
 - Add the following entries to `/etc/hosts`:
-        
+    ```
     127.0.0.1   localhost
     ::1         localhost
     127.0.1.1   myhostname.localdomain   myhostname
-        
+     ```
 <br/>
 
 > ## :rocket: Users
