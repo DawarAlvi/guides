@@ -71,7 +71,7 @@ Use `fdisk` or `cfidsk` to partition the disk.
 
 <br/>
 
-> ## :hourglass_flowing_sand: Get a cup of :tea: (or :coffee:, I don' judge :wink:)
+> ## :hourglass_flowing_sand: Get a cup of :tea: (or :coffee:, I don't judge :wink:)
 
 <br/>
 
