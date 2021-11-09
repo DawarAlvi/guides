@@ -116,7 +116,7 @@ Example output:
 
     timedatectl status
 
-# Environmental vars:
+# Environment variables:
 
 **Place at the end of your ~/.profile or ~/.bashrc file:**
 
