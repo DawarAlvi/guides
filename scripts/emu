@@ -1,0 +1,1 @@
+javascript:(function(){s=prompt("Check%20URL",location.toString());u="https://www.emuparadise.me/roms/get-download.php?test=true&gid=";if(s.match("emuparadise.me").length>0){s=s.replace("?","/").replace("=","/").split("/");i=s[s.length-1];open(u+i.replace("-download",""))}else{alert("Not%20Emuparadise")}})()
