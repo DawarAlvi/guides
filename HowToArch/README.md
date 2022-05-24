@@ -57,22 +57,23 @@
 Use `fdisk` or `cfidsk` to partition the disk.
 
 #### Format the partitions
-    mkfs.fat -F32 /dev/sdX#
-    mkfs.ext4 /dev/sdX#
-    mkswap /dev/sdX#
-    swapon /dev/sdX#
+    mkfs.fat -F32 /dev/sdXY
+    mkfs.ext4 /dev/sdXZ
+    
+    mkswap /dev/sdXW
+    swapon /dev/sdXW
     
 #### Mount the root partition
-    mount /dev/sda# /mnt
+    mount /dev/sdXZ /mnt
 
 <br/>
 
 > ## :rocket: Install essential packages
-    pacstrap /mnt base linux linux-firmware
+    pacstrap /mnt base base-devel linux linux-firmware neovim
 
 <br/>
 
-> ## :hourglass_flowing_sand: Get a cup of :tea: (or :coffee:, I don't judge :wink:)
+> ## :hourglass_flowing_sand: Get a cup of :tea: or :coffee:
 
 <br/>
 
@@ -109,7 +110,7 @@ Use `fdisk` or `cfidsk` to partition the disk.
 <br/>
 
 > ## :rocket: Network configuration
-    <hostname> > /etc/hostname
+    echo <hostname> > /etc/hostname
         
 - Add the following entries to `/etc/hosts`:
     ```
@@ -123,16 +124,15 @@ Use `fdisk` or `cfidsk` to partition the disk.
         passwd
         *****
         
-        useradd -m <username>
+        useradd -mG wheel,audio,video,optical,storage <username>
         passwd <username>
         *****
-        usermod -aG wheel,audio,video,optical,storage <username>
-        
+    
         pacman -S sudo
         
         EDITOR=nvim visudo
 
-- Uncomment the line `%wheel ALL=(ALL) NOPASSWD: ALL`
+- Uncomment the line `%wheel ALL=(ALL:ALL)ALL`
 
 
 > ## :rocket: Bootloader
@@ -140,13 +140,41 @@ Use `fdisk` or `cfidsk` to partition the disk.
         mkdir /boot/efi
         mount /dev/sdX# /boot/efi
         pacman -S grub efibootmgr dosfstools os-prober mtools
-        grub-install --target=x86_64-efi --bootoader-id=grub_uefi --recheck
+        grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootoader-id=grub_uefi --recheck
         grub-mkconfig -o /boot/grub/grub.cfg
         
-> ## :rocket: Network and Programs
+    
+    
+> ## :rocket: Useful Programs
         pacman -S networkmanager git
         systemctl enable NetworkManager
+    
+    
+    
+> ## :rocket: yay AUR helper
+        git clone https://aur.archlinux.org/yay-git.git
+        cd yay-git
+        makepkg -si
+
+  
+> ## :rocket: GUI
+        pacman -S xorg xorg-xinit alacritty awesome ttf-dejavu neofetch htop [xf86-video-fbdev | xf86-video-intel | xf86-video-amdgpu |  xf86-video-nouveau]
         
+> :link: [GPU Driver Reference](https://wiki.archlinux.org/title/Category:Graphics)
+    
+    
+    
+> ## :rocket: Setup Xinitrc
+        cp /etc/x11/xinit/xinitrc ~/.xinitrc
+        nvim .xinitrc
+        # delete last 5 lines the add:
+        exec awesome
+
+    
+> ## :rocket: Awesome Config
+        cp /etc/xdg/awesome/rc.lua ~/.config/awesome
+        
+    
 > ## :tada: Done
         umount /boot/efi
         exit
