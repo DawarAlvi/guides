@@ -1,6 +1,7 @@
 # Windows Guides and Tricks
 
 ## Customize PowerShell Prompt
+[Ref](https://stackoverflow.com/questions/5725888/windows-powershell-changing-the-command-prompt)
 
 If you only want to change for the current user or can't run as admin.
 ```
