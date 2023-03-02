@@ -6,5 +6,5 @@
 #Usage:
 #themer.sh <app_name>
 
-theme="/home/dawar/.local/share/themes/Adapta-Red-Nokto-Eta/gtk-2.0/gtkrc"
+theme="~/.local/share/themes/Adapta-Red-Nokto-Eta/gtk-2.0/gtkrc"
 GTK2_RC_FILES=$theme $1
