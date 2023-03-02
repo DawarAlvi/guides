@@ -1,7 +1,7 @@
 @ECHO OFF
 
 :: Config
-SET SRC_NAME=Main.cpp
+SET SRC_NAME=App.cpp
 SET APP_NAME=App.exe
 SET SRC_DIR=src
 SET BUILD_DIR=bin
