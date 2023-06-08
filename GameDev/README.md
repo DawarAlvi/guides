@@ -58,3 +58,18 @@ Vector3 CalculatePositionOnBCurve(Vector3 start, Vector3 apex, Vector3 end, floa
     return Vector3.Lerp(Vector3.Lerp(start, apex, t), Vector3.Lerp(apex, end, t), t);
 }
 ```
+
+### Attach an object by an attachment point
+```csharp
+void Attach(Transform item, Transform socket, string attachmentPointName) {
+  Transform attachmentPoint = item.Find(attachmentPointName);
+  if (attachementPoint != null) {
+    item.SetParent(socket);
+    item.localRotation = Quaternion.identity;
+    item.localPosition = Vector3.zero;
+    
+    item.localRotation = Quaternion.Inverse(socket.rotation) * attachmentPoint.rotation;
+    item.localPosition = -socket.InverseTransformPoint(attachmentPoint.position);
+  }
+}
+```
