@@ -69,7 +69,7 @@ void Attach(Transform item, Transform socket, string attachmentPointName) {
   item.localRotation = Quaternion.identity;
   item.localPosition = Vector3.zero;
 
-  item.localRotation = Quaternion.Inverse(socket.rotation) * attachmentPoint.rotation;
+  item.localRotation = Quaternion.Inverse(attachmentPoint.rotation) * socket.rotation;
   item.localPosition = -socket.InverseTransformPoint(attachmentPoint.position);
 }
 ```
