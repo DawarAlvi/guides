@@ -1,0 +1,16 @@
+local function adapt_zoom(self)
+	local display_width = sys.get_config_int("display.width")
+	local display_height = sys.get_config_int("display.height")
+	local window_width,window_height = window.get_size()
+	local display_scale = window.get_display_scale()
+	local zoom = math.min(window_width / display_scale / display_width, window_height / display_scale / display_height)
+	go.set("#camera", "orthographic_zoom", zoom)
+end
+
+function init(self)
+	window.set_listener(function(self, event, data)
+		if event == window.WINDOW_EVENT_RESIZED then
+			adapt_zoom(self)
+		end
+	end)
+end
